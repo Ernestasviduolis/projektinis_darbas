@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+  text-decoration: none;  
+}
+header {
+    background-color: rgb(136, 136, 188);
+}
+.head {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li {
+display: inline-block;
+}
+.menu ul li a {
+color: black;
+padding: 20px;
+display: block;
+font-size: 18px;
+}
+.menu ul li a:hover {
+background: rgba(255, 255, 255, 0.3);
+}
+.menu ul li a.active {
+    background: rgba(255, 255, 255, 0.3);
+    }
+.snow-image {
+    background-color: rgb(186, 214, 214);
+    display: block;
+    height: 450px;
+}
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+main {
+    margin-top: 30px;
+}
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.trumpa-paslauga{
+    padding: 10px;
+    text-align: justify;
+}
+.trumpa-paslauga h1{text-align: left;}
+.paslaugu-foto {
+    text-align: center;
+}
+.contact {
+    padding: 20px;
+}
+.form   {
+    margin: 20px;
+}
+input, textarea {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+footer {
+    background-color: rgb(103, 103, 103);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+    color:white;
+    font-size: 16px;
+}
+@media screen and (max-width:767px ) {
+    .head, .content {
+        grid-template-columns: 1fr;
+    }  
+   .paslaugu-foto  img{
+        max-width: 90%;
+        height: auto;
+        margin: auto;
+        text-align: center;
+    }
+    .trumpa-paslauga {
+        padding: 25px;
+    }
+}
