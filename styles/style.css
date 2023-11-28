@@ -38,6 +38,9 @@ display: inline-block;
 .menu {
     text-align: right;
 }
+.mebileTel {
+    display: none;
+}
 .menu ul li a {
 color: black;
 padding: 20px;
@@ -147,5 +150,18 @@ footer {
     }
     .show {
         display: block;
+    }
+    .mebileTel {
+        padding: 10px 0;
+        display: block;
+        max-width: 100%;
+        margin: auto;
+        font-size: 30px;
+        background: rgb(139, 146, 154);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
     }
 }
