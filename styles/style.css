@@ -6,14 +6,25 @@ body {
 a {
   text-decoration: none;  
 }
+p {
+    line-height: 25px;
+}
 header {
-    background-color: rgb(136, 136, 188);
+    background-color: rgb(126 155 195);
+}
+.logo img {
+    max-width: 150px;
+    height: auto;
+    margin-left: 20px;
 }
 .head {
     max-width: 1100px;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+.mobile {
+    display: none;
 }
 .menu ul{
     list-style-type: none;
@@ -22,6 +33,10 @@ header {
 }
 .menu ul li {
 display: inline-block;
+
+}
+.menu {
+    text-align: right;
 }
 .menu ul li a {
 color: black;
@@ -35,17 +50,21 @@ background: rgba(255, 255, 255, 0.3);
 .menu ul li a.active {
     background: rgba(255, 255, 255, 0.3);
     }
-.snow-image {
-    background-color: rgb(186, 214, 214);
+.snow-foto {
+    background: url("3d-christmas-snowy-landscape.jpg") no-repeat top center;
     display: block;
     height: 450px;
+    background-size: 100% 100%;
 }
 .container {
     max-width: 1100px;
     margin: auto;
 }
 main {
-    margin-top: 30px;
+    padding: 30px 0;
+    background: #d8e0e9;
+    border-top: 2px solid #96a8ca;
+
 }
 .content {
     display: grid;
@@ -84,7 +103,6 @@ footer {
     background-color: rgb(103, 103, 103);
     text-align: center;
     padding: 10px 0;
-    margin-top: 30px;
     color:white;
     font-size: 16px;
 }
@@ -100,5 +118,34 @@ footer {
     }
     .trumpa-paslauga {
         padding: 25px;
+    }
+    .menu ul li {
+        display: block;
+    }
+    .open {
+        background: url(m.png) no-repeat center center;
+        display: block;
+        height: 50px;
+        background-size: 100% 70%;
+    }
+    .close {
+        background: url(c.png) no-repeat center center; 
+        height: 50px;
+        background-size: 100% 70%;
+    }
+    .mobile {
+        background-color: #bbdbdb;
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 5px;
+        right: 15px;
+    }
+    .bemeniu {
+        display: none;
+    }
+    .show {
+        display: block;
     }
 }
