@@ -1,167 +1,223 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 a {
-  text-decoration: none;  
+  text-decoration: none;
 }
 p {
-    line-height: 25px;
+  line-height: 25px;
 }
 header {
-    background-color: rgb(126 155 195);
+  background-color: rgb(126 155 195);
 }
 .logo img {
-    max-width: 150px;
-    height: auto;
-    margin-left: 20px;
+  max-width: 150px;
+  height: auto;
+  margin-left: 20px;
 }
 .head {
-    max-width: 1100px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns:30% 70%;
 }
 .mobile {
-    display: none;
+  display: none;
 }
-.menu ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 .menu ul li {
-display: inline-block;
-
+  display: inline-block;
 }
 .menu {
-    text-align: right;
+  text-align: right;
 }
 .mebileTel {
-    display: none;
+  display: none;
 }
 .menu ul li a {
-color: black;
-padding: 20px;
-display: block;
-font-size: 18px;
+  color: black;
+  padding: 20px;
+  display: block;
+  font-size: 18px;
 }
 .menu ul li a:hover {
-background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3);
 }
 .menu ul li a.active {
-    background: rgba(255, 255, 255, 0.3);
-    }
+  background: rgba(255, 255, 255, 0.3);
+}
 .snow-foto {
-    background: url("3d-christmas-snowy-landscape.jpg") no-repeat top center;
-    display: block;
-    height: 450px;
-    background-size: 100% 100%;
+  background: url("3d-christmas-snowy-landscape.jpg") no-repeat top center;
+  display: block;
+  height: 450px;
+  background-size: 100% 100%;
+  position: relative;
+}
+.moto {
+  position: absolute;
+  top: 15%;
+  font-size: 50px;
+  color: black;
+  left: 10%;
 }
 .container {
-    max-width: 1100px;
-    margin: auto;
+  max-width: 1100px;
+  margin: auto;
+  position: relative;
 }
 main {
-    padding: 30px 0;
-    background: #d8e0e9;
-    border-top: 2px solid #96a8ca;
-
+  padding: 30px 0;
+  background: #d8e0e9;
+  border-top: 2px solid #96a8ca;
 }
 .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.trumpa-paslauga{
-    padding: 10px;
-    text-align: justify;
+.trumpa-paslauga {
+  padding: 10px;
+  text-align: justify;
 }
-.trumpa-paslauga h1{text-align: left;}
+.trumpa-paslauga h1 {
+  text-align: left;
+}
 .paslaugu-foto {
-    text-align: center;
+  text-align: center;
 }
 .contact {
-    padding: 20px;
+  padding: 20px;
 }
-.form   {
-    margin: 20px;
+.form {
+  margin: 20px;
 }
-input, textarea {
-    padding: 10px;
-    margin: 10px 0;
-    width: 100%;
-    box-sizing: border-box;
+input,
+textarea {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 button {
-    padding: 10px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 footer {
-    background-color: rgb(103, 103, 103);
-    text-align: center;
-    padding: 10px 0;
-    color:white;
-    font-size: 16px;
+  background-color: rgb(103, 103, 103);
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+  font-size: 16px;
 }
-@media screen and (max-width:767px ) {
-    .head, .content {
-        grid-template-columns: 1fr;
-    }  
-   .paslaugu-foto  img{
-        max-width: 90%;
-        height: auto;
-        margin: auto;
-        text-align: center;
-    }
-    .trumpa-paslauga {
-        padding: 25px;
-    }
-    .menu ul li {
-        display: block;
-    }
-    .open {
-        background: url(m.png) no-repeat center center;
-        display: block;
-        height: 50px;
-        background-size: 100% 70%;
-    }
-    .close {
-        background: url(c.png) no-repeat center center; 
-        height: 50px;
-        background-size: 100% 70%;
-    }
-    .mobile {
-        background-color: #bbdbdb;
-        display: block;
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        top: 5px;
-        right: 15px;
-    }
-    .bemeniu {
-        display: none;
-    }
-    .show {
-        display: block;
-    }
-    .mebileTel {
-        padding: 10px 0;
-        display: block;
-        max-width: 100%;
-        margin: auto;
-        font-size: 30px;
-        background: rgb(139, 146, 154);
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        text-align: center;
-    }
+.patarimas {
+    display: flex;
+    margin: 10px;
+}
+
+.pFoto {
+    max-width: 400px;
+}
+
+.pFoto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tekstas {
+    padding: 0 20px;
+}
+
+.tekstas h3 {
+    margin: 0;
+}
+.contact p {
+    font-size: 23px;
+    line-height: 30px;
+}
+.trumpa-paslauga ul {
+    font-size: 20px;
+    line-height: 25px;
+}
+.trumpa-paslauga p {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+@media screen and (max-width: 767px) {
+  .head,
+  .content {
+    grid-template-columns: 1fr;
+  }
+  .paslaugu-foto img {
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+  }
+  .trumpa-paslauga {
+    padding: 25px;
+  }
+  .menu ul li {
+    display: block;
+  }
+  .open {
+    background: url(m.png) no-repeat center center;
+    display: block;
+    height: 50px;
+    background-size: 100% 70%;
+  }
+  .close {
+    background: url(c.png) no-repeat center center;
+    height: 50px;
+    background-size: 100% 70%;
+  }
+  .mobile {
+    background-color: #bbdbdb;
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+  }
+  .bemeniu {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  .mebileTel {
+    padding: 10px 0;
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    font-size: 30px;
+    background: rgb(139, 146, 154);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transition: 1s linear;
+  }
+  .moto {
+    left: 15px;
+  }
+  .moto p {
+    line-height: 60px;
+    margin: 10px 10px;
+  }
+  .patarimas {
+    margin-left: 25px;
+}
 }
